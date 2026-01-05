@@ -1,0 +1,68 @@
+# =========================
+# Python / FastAPI
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+.env.local
+.env.production
+
+# =========================
+# Logs & Runtime Files
+# =========================
+*.log
+logs/
+instance/
+
+# =========================
+# Uploaded / Generated Files
+# =========================
+uploads/
+resources/
+output.csv
+output_*.csv
+
+# =========================
+# ML Models & Artifacts
+# =========================
+models/*.joblib
+models/*.pkl
+models/*.pt
+models/*.onnx
+models/*.bin
+
+# =========================
+# Cache / Temp
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Deployment / Server
+# =========================
+*.pid
+gunicorn.sock
