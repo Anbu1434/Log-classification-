@@ -41,7 +41,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://your-frontend-domain.com",  
+        "https://your-frontend-domain.com",
+        "http://localhost:3000",
+        "http://localhost:5173",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -113,6 +115,11 @@ def verify_clerk_token(authorization: str = Header(...)):
 # -------------------------------------------------
 # ROUTES
 # -------------------------------------------------
+
+@app.get("/")
+def read_root():
+    return {"message": "Log Classification API is running", "docs_url": "/docs"}
+
 
 @app.post("/classify/text")
 def classify_text(

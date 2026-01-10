@@ -7,3 +7,5 @@ sentence-transformers
 python-jose[cryptography]
 requests
 python-multipart
+python-dotenv
+groq
