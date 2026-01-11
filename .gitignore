@@ -38,7 +38,7 @@ output_*.csv
 # =========================
 # ML Models & Artifacts
 # =========================
-models/*.joblib
+# models/*.joblib
 models/*.pkl
 models/*.pt
 models/*.onnx
